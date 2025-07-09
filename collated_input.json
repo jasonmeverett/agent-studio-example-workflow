@@ -18,7 +18,7 @@
   "tool_instances": [
     {
       "id": "t1",
-      "name": "Better Calculator Tool v2",
+      "name": "Better Calculator Tool v3",
       "python_code_file_name": "tool.py",
       "python_requirements_file_name": "requirements.txt",
       "source_folder_path": "calculator_tool",
