@@ -57,6 +57,20 @@ export MY_LLM_API_KEY="your-llm-api-key-here"
 
 ### Deployment Process
 
+**SET ALL ENVIRONMENT VARIABLES IN `deploy.sh` BEFORE CONTINUING.**
+
+Also, if you are running on Cloudera AI Inference for a model, you should set the following in `deploy.sh`:
+```
+        "llm_config": {
+            "m1": {
+                "model_type": "CAII",
+                "provider_model": "<model identifier goes here>",
+                "api_base": "<API base URL goes here>"
+                "api_key": "${MY_LLM_API_KEY}"
+            }
+        }
+```
+
 See `deploy.sh` as an example of how to deploy to an Agent Studio's `/api/deploy` route. The deployment script:
 
 1. Sets up the required environment variables
